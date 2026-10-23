@@ -28,5 +28,10 @@ class File(models.Model):
         blank=True,
     )
 
+    processed_row = models.PositiveIntegerField(
+        null=True,
+        blank=True
+    )
+
     def __str__(self):
         return self.original_name
